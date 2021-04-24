@@ -1,0 +1,52 @@
+.header{
+    .bottom_header{
+        .container{
+            .bot_nav{
+                .bot_second{
+                    min-width: 70%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                .bot_third{
+                    min-width: 10%;
+                    .menu_search{
+                        .menu_search-item{
+                            .cart_box{
+                                .cart_footer{
+                                    .cart_buttons{
+                                        .btn-radius{
+                                            border-radius: unset ;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .header{
+        .bottom_header{
+            .container{
+                .bot_nav{
+                    .bot_second{
+                        .list-item{
+                            .menu_nav{
+                                margin-left: -45%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+

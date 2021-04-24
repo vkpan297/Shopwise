@@ -1,0 +1,93 @@
+.sub{
+    background-color: #333;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sub_item{
+            width: 50%;
+            margin: 50px 0;
+            margin-right: 20px;
+            margin-left: 20px;
+            position: relative;
+            p{
+                margin: 0;
+                font-weight: 700;
+                color: #fff;
+                font-size: 1.75rem;
+            }
+            input{
+                color: #000;
+                box-shadow: none;
+                height: 48px;
+                padding: 8px 15px;
+                width: 100%;
+                outline: none;
+            }
+            button{
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 12px 35px;
+                transition: all 0.3s ease-in-out;
+                background-color: #FF324D;
+                border: 1px;
+                color: #fff;
+                border-color: #343a40;
+                outline: none;
+            }
+        }
+    }
+}
+@media (max-width: 667px){
+    .sub{
+        .container{
+            flex-direction: column;
+            .sub_item{
+                width: 100%;
+                margin:  0;
+                margin: 0;
+                position: relative;
+                margin-bottom: 20px;
+                p{
+                    font-size: 20px;
+                }
+                button{
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+                input{
+                    padding: 10px 140px 10px 20px;
+                    height: 44px;
+                }
+            }
+            .s1{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media  (min-width: 768px) 
+and (max-width: 1024px){
+    .sub{
+        .container{
+            .s1{
+                p{
+                    font-size: 22px;
+                }
+            }
+            .sub_item{
+                
+                button{
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+                input{
+                    height: 44px;
+                }
+            }
+        }
+    }
+}

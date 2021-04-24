@@ -1,0 +1,111 @@
+.sub{
+    background-color: #333;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        .sub_item{
+            width: 50%;
+            margin: 50px 0;
+            margin-right: 20px;
+            margin-left: 20px;
+            position: relative;
+            .title{
+                margin: 0;
+                font-weight: 700;
+                color: #fff;
+                font-size: 1.75rem;
+                margin-bottom: 25px;
+            }
+            p{
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 25px;
+            }
+            input{
+                border-radius: .25rem;
+                color: #000;
+                box-shadow: none;
+                height: 48px;
+                padding: 8px 15px;
+                width: 100%;
+                outline: none;
+            }
+            button{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s ease-in-out;
+                border: 1px;
+                border-color: #343a40;
+                outline: none;
+                background-color: transparent;
+                color: #FF324D;
+                font-size: 20px;
+                right: 5px;
+                width: 50px;
+                height: 40px;
+                line-height: 40px;
+                border-left: 1px solid #ddd;
+                border-top: 0;
+                border-bottom: 0;
+                border-right: 0;
+                padding: 0 0 0 5px;
+            }
+        }
+    }
+}
+@media (max-width: 667px){
+    .sub{
+        .container{
+            flex-direction: column;
+            .sub_item{
+                width: 100%;
+                margin:  0;
+                margin: 0;
+                position: relative;
+                margin-bottom: 20px;
+                p{
+                    font-size: 20px;
+                }
+                button{
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+                input{
+                    padding: 10px 140px 10px 20px;
+                    height: 44px;
+                }
+            }
+            .s1{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media  (min-width: 768px) 
+and (max-width: 1024px){
+    .sub{
+        .container{
+            .s1{
+                p{
+                    font-size: 22px;
+                }
+            }
+            .sub_item{
+                
+                button{
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+                input{
+                    height: 44px;
+                }
+            }
+        }
+    }
+}

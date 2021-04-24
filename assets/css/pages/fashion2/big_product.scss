@@ -1,0 +1,89 @@
+.big_product{
+    .container{
+        .big-head{
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .list_pro{
+            .head-pro{
+                .item{
+                    .item-nav{
+                        display: flex;
+                        align-items: center;
+                        margin: 5px;
+                        margin-bottom: 30px;
+                        padding: 15px;
+                        
+                        background-color: #fff;
+                        position: relative;
+                        transition: all 0.5s ease-in-out;
+                        box-shadow: 0 0 7px rgba(0,0,0,0.1);
+                        .item-wrap{
+                            max-width: 30%;
+                        }
+                        .product_info{
+                            max-width: 70%;
+                            text-align: left;
+                            .product_price{
+                                del{
+                                    color: #687188;
+                                }
+                            }
+                            .rating_wrap{
+                                span{
+                                    color: #687188;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.big_product .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+.big_product{
+    .owl-nav{
+        position: absolute;
+        border-radius: 0;
+        right: 30px;
+        top:-90px;
+        height: auto;
+        button.owl-prev{
+            left: auto;
+            right:20px;
+            position: absolute;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            i{
+                font-size:15px;
+                color: #000;   
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        button.owl-next{
+            left:0;
+            right: auto;
+            position: absolute;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            i{
+                font-size:15px;
+                color: #000;
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        .owl-next,.owl-prev{
+            &:focus{
+                border:0;
+                outline: none; 
+            }
+        }
+    
+    }
+}

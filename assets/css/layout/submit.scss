@@ -1,0 +1,206 @@
+/*============================= 3, sub Css ============================*/
+.submit_content{
+    text-align: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    background-color: #fff;
+    top:18%;
+    left:30%;
+    .sub-content{
+        padding: 50px;
+        .sub-text{
+            h4{
+                font-weight: 700;
+                margin: 0;
+                text-transform: capitalize;
+                color: #292b2c;
+                font-size: 22px;
+            }
+            .text{
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 50px;
+                    height: 1px;
+                    background-color: #FF324D;
+                    bottom: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+            p{
+                color: #687188;
+                line-height: 28px;
+                margin-bottom: 25px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            form{
+                input{
+                    margin-bottom: 1rem;
+                    border-radius: 30px;
+                    padding: 10px 20px;
+                    color: #000;
+                    box-shadow: none;
+                    height: 50px;
+                    display: block;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    &::placeholder{
+                        color: #687188;
+                    }
+                    
+                }
+                button{
+                    border-radius: 30px;
+                    padding: 10px 20px;
+                    color: #fff;
+                    box-shadow: none;
+                    height: 50px;
+                    display: block;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    background-color: #fff;
+                    border: 1px solid #000;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    &:hover{
+                        color: #333;
+                        &::before{
+                            width: 0;
+                        }
+                        &::after{
+                            width: 0;
+                        }
+                    }
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        background-color: #333;
+                        z-index: -1;
+                        transition: all 0.3s ease-in-out;
+                        width: 50%;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        right: 0;
+                        left: auto;
+                        top: 0;
+                        bottom: 0;
+                        background-color: #333;
+                        z-index: -1;
+                        transition: all 0.3s ease-in-out;
+                        width: 50%;
+                    }
+                }
+            }
+            .check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                margin-top: 15px;
+                input{
+                    display: none;
+                }
+                label{
+                    color: #687188;
+                    cursor: pointer;
+                    position: relative;
+                    font-weight: 500;
+                    &::before{
+                        content: "";
+                        border: 2px solid #ced4da;
+                        height: 17px;
+                        width: 17px;
+                        margin: 0px 8px 0 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                   
+                }
+            }
+            .check{
+                input[type="checkbox"]:checked + label::before{
+                    background-color: #FF324D;
+                    border-color: #FF324D;
+                }
+            }
+            .check {
+                input[type="checkbox"] + label::after{
+                    content: "";
+                    width: 11px;
+                    position: absolute;
+                    top: 50%;
+                    left: 3px;
+                    opacity: 0;
+                    height: 6px;
+                    border-left: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    transform: translateY(-65%) rotate(-45deg);
+                }
+            }
+            .check {
+                input[type="checkbox"]:checked + label::after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    &.show{
+        display: block;
+        animation-name: fadeInDown;
+        animation-duration: 0.8s;
+        animation-fill-mode: both;
+    }
+    
+    .close{
+        top:1%;
+        position: absolute;
+        right: 1%;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+.zoomContainer{
+    z-index: 999999;
+}
+.sub_overlay{
+    content: "";
+    background-color: #000;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    opacity: 0.8;
+    left: 0;
+    right: auto;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 99;
+    display: none;
+    &.show{
+        display: block;
+    }
+}

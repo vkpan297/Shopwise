@@ -1,0 +1,90 @@
+.header{
+    
+    .bottom_header{
+        .container{
+            .bot_nav{
+                .bot_second{
+                    min-width: 70%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .list-item{
+                        .menu_nav{
+                            .menu_nav-item, .menu_nav-item-product{
+                                &>a{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bot_third{
+                    min-width: 10%;
+                    .menu_search{
+                        .menu_search-item,.menu_search-item-search{
+                            a{
+                                span{
+                                    color:#fff;
+                                    font-size: 18px;
+                                }
+                            }
+                            .cart_box{
+                                .cart_footer{
+                                    .cart_buttons{
+                                        .btn-radius{
+                                            border-radius: unset ;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header.trans{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+    background: transparent !important;
+}
+.header:not([class*="bg_"]):not([class*="bg-"]).trans {
+    background-color: transparent;
+}
+.header.nav-fixed {
+    box-shadow: 0 0 5px rgba(0, 0, 0 ,15%);
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+    animation-fill-mode: none;
+    background-color: #000 !important;
+}
+
+@media (max-width: 667px){
+    .header{
+        .bottom_header{
+            .container{
+                .bot_nav{
+                    .bot_second{
+                        .list-item{
+                            .menu_nav{
+                                margin-left: -45%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+

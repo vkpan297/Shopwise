@@ -1,0 +1,517 @@
+.header{
+    .top_header{
+        .container{
+            .row{
+                .txt-right{
+                    justify-content: flex-start;
+                    .right{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .first_txt{
+                            border-right: 1px solid #ddd;
+                            h4{
+                                font-size: 14px;
+                                vertical-align: middle; 
+                                margin: 0;
+                                padding: 0 10px;
+                                color: #687188;
+                            }
+                        }
+                        .second_txt{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            ul{
+                                display: flex;
+                                padding: 0 5px;
+                                li{
+                                    padding: 0 5px;
+                                    a{
+                                        color: #687188;
+                                    }
+                                }
+                            }
+                            h4{
+                                font-size: 14px;
+                                vertical-align: middle; 
+                                margin: 0;
+                                padding: 0 5px 0 10px;
+                                color: #687188;
+                            }
+                        }
+                    }
+                }
+                .txt-left{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    .mid_header{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        .container{
+            
+            display: flex;
+            align-items: center;
+            .mid_second{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+                width: 100%;
+                max-width: 790px;
+                &.show{
+                    display: block !important;
+                }
+                .cate{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .cate-first{
+                        select{
+                            border: 1px solid #ced4da;
+                            padding: 8px 35px 8px 15px;
+                            height: 50px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color:#6c757d;
+                        }
+                    }
+                    .search{
+                        position: relative;
+                        input{
+                            flex: 1 1 auto;
+                            width: 130%;
+                            min-width: 0;
+                            position: relative;
+                            margin-bottom: 0;
+                            height: 50px;
+                            padding-right: 60px !important;
+                            color: #000;
+                            box-shadow: none;
+                            padding: 8px 15px;
+                            border:1px solid #ced4da;
+                            outline: none;
+                            &::placeholder{
+                                color: #6c757d;
+                                font-weight: 500;
+                            }
+                        }
+                        button{
+                            position: absolute;
+                            right: -80px;
+                            background-color: #fff;
+                            border: 0;
+                            padding: 0px 15px;
+                            font-size: 20px;
+                            top: 1px;
+                            bottom: 1px;
+                            z-index: 9;
+                            border: 0;
+                            outline: none;
+                            span{
+                                font-size: unset !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .mid_third{
+                order: 13;
+                display: flex;
+                justify-content: flex-end;
+                i{
+                    font-size: 30px;
+                    margin-right: 10px;
+                    color: #FF324D;
+                }
+                span{
+                    color: #16181b;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .bottom_header{
+        background-color: #1D2224;
+        .container{
+            padding: 0;
+            .bot_nav{
+                .bot_first{
+                    padding: 0 !important;
+                    .cate_wrap{
+                        position: relative;
+                        button{
+                            background-color: #FF324D;
+                            border: 1px solid #FF324D;
+                            padding: 21px 15px;
+                            color: #fff;
+                            text-align: left;
+                            width: 100%;
+                            i{
+                                font-size: 24px;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                            }
+                            span{
+                                vertical-align: middle;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                            }
+                        }
+                        .cate_list-wrap{
+                            background-color: #fff;
+                            position: absolute;
+                            padding: 5px 0px 0;
+                            top: 100%;
+                            width: 100%;
+                            left: 0;
+                            right: 0;
+                            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+                            z-index: 99;
+                            
+                            .list_cate{
+                                width: 100%;
+                                .cate_item{
+                                    padding: .5rem .1rem;
+                                    position: relative;
+                                    
+                                    .drop_menu{
+                                        position: absolute;
+                                        left: 100%;
+                                        top: 0;
+                                        margin: 0;
+                                        border: 0;
+                                        min-width: 800px;
+                                        width: 100%;
+                                        right: 0;
+                                        box-shadow: 10px 16px 49px 0px rgba(38,42,46,0.05);
+                                        border-radius: 0;
+                                        padding: 0;
+                                        display: none;
+                                        .mega-menu{
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            padding: 15px 0;
+                                            background-color: #fff;
+                                            li{
+                                                ul{
+                                                    li{
+                                                        padding: 10px 15px;
+                                                        a{
+                                                            padding: 0 !important;
+                                                            color: #6c757d;
+                                                            font-weight: 500;
+                                                            &:hover{
+                                                                color: #FF324D;
+                                                            }
+                                                        }
+                                                    }
+                                                    .dropdown-header{
+                                                        color: #333;
+                                                        font-weight: bold;
+                                                    }
+                                                }
+                                                .head-ban{
+                                                    position: relative;
+                                                    .banne_info1{
+                                                        position: absolute;
+                                                        top:35%;
+                                                        right: 10%;
+                                                        h6{
+                                                            font-size: 15px;
+                                                        }
+                                                        h4{
+                                                            font-size: 20px;
+                                                        }
+                                                        a{
+                                                            padding: 0 !important;
+                                                            font-size: 15px;
+                                                            font-weight: 500;
+                                                            position: relative;
+                                                            &:before{
+                                                                content: "";
+                                                                position: absolute;
+                                                                left: 0;
+                                                                right: 0;
+                                                                bottom: 0;
+                                                                height: 2px;
+                                                                width: 50%;
+                                                                background-color: #6c757d;
+                                                                transition: all 0.5s ease-in-out;
+                                                            }
+                                                            &:hover{
+                                                                color: #FF324D;
+                                                                &:before{
+                                                                    width: 100%;
+                                                                }
+                                                            }
+                                                        }
+
+                                                    }
+                                                }
+                                                .head-banner1{
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        .fas{
+                                            color: #FF324D;
+                                        }
+                                        >a{
+                                            color: #FF324D;
+                                        }
+                                        .drop_menu{
+                                            display: block;
+                                            animation-name: fadeInUp;
+                                            animation-duration: 1s;
+                                            animation-fill-mode: both;
+                                        }
+                                        
+                                    }
+                                    a{
+                                        font-size: 14px;
+                                        width: 100%;
+                                        clear: both;
+                                        padding: 0 1rem;
+                                        font-weight: 400;
+                                        color: #6c757d;
+                                        text-align: inherit;
+                                        white-space: nowrap;
+                                        background-color: transparent;
+                                        border: 0;
+                                        transition: all 0.3s ease-in-out;
+                                        .fa-icon{
+                                            font-size: 22px;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            line-height: 30px;
+                                            color: #6c757d;
+                                        }
+                                        .fas{
+                                            transition: all 0.3s ease-in-out;
+                                        }
+                                    }
+                                }
+                                .cate-menu{
+                                    position: relative;
+                                    .fa-chevron-right{
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 15px;
+                                        color: #6c757d;
+                                    }
+                                }
+                            }
+                            .more_cate{
+                                padding: 12px 15px;
+                                display: block;
+                                font-size: 16px;
+                                color: #FF324D;
+                                border-top: 1px solid #ddd;
+                                margin-top: 5px;
+                                position: relative;
+                                cursor: pointer;
+                                width: 100%;
+                                &::before{
+                                    position: absolute;
+                                    content: "";
+                                    background-color: #FF324D;
+                                    width: 16px;
+                                    height: 1px;
+                                    right: 15px;
+                                    top: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .bot_second{
+                    min-width: 80%;
+                    display: flex;
+                    justify-content: flex-start;
+                    padding-left: 100px;
+                    align-items: center;
+                    position: relative;
+                    .list-item{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .menu_nav{
+                            .text-uppercase{
+                                a{
+                                    color: #fff;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                &:hover{
+                                    >a{
+                                        color: #FF324D;
+                                    }
+                                }
+                                .nav{
+                                    background-color: #333;
+                                    
+                                }
+                                .product_head-nav{
+                                    background-color: #333;
+                                    .product_nav{
+                                        .col-lg-3{
+                                            ul{
+                                                li{
+                                                    color: #fff;
+                                                }
+                                            }
+                                            .shop_bn_content{
+                                                padding-left: 0;
+                                                padding: 20px;
+                                                h5{
+                                                    font-size: 15px;
+                                                }
+                                                h3{
+                                                    font-size: 20px;
+                                                }
+                                                a{
+                                                    padding: 4px 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .product_img{
+                                        .produc_img-nav{
+                                            flex: 0 0 50%;
+                                            max-width: 50%;
+                                            img{
+                                                width: 100%;
+                                            }
+                                            .banne_info{
+                                                right: 5%;
+                                                left: auto;
+                                                z-index: 99;
+                                                h6{
+                                                    font-size: 14px;
+                                                }
+                                                h4{
+                                                    font-size: 15px;
+                                                }
+                                                a{
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                    &:hover{
+                                                        color: #FF324D;
+                                                        &::before{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .blogs_nav{
+                                    background-color: #333;
+                                    padding: 0 !important;
+                                    ul{
+                                        li{
+                                            padding: 10px;
+                                            ul{
+                                                background-color: #333;
+                                                padding: 0;
+                                                li{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu_search{
+                            position: absolute;
+                            right: 0;
+                            color: #fff;
+                            .list-search{
+                                display: none;
+                                .search1{
+                                    .fa-times{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .menu_search-item{
+                                
+                                .cart_count-heart{
+                                    position: relative;
+                                    top: -3px;
+                                    left: -25%;
+                                    font-size: 11px;
+                                    background-color: #FF324D;
+                                    border-radius: 50px;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    color: #fff;
+                                    min-width: 16px;
+                                    text-align: center;
+                                    padding: 0 5px;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: -5px;
+                                    margin-right: -5px;
+                                }
+                                a{
+                                    color: #fff;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                &:hover{
+                                    a{
+                                        color:#FF324D
+                                    }
+                                }
+                                .cart_box{
+                                    top:45px;
+                                    background-color: #333;
+                                    .cart_footer{
+                                        .cart_buttons{
+                                            .view-cart{
+                                                border: 1px solid #252A2C;
+                                                &:hover{
+                                                    color: #252A2C !important;
+                                                }
+                                                &:before{
+                                                    background-color: #252A2C !important;
+                                                }
+                                                &:after{
+                                                    background-color: #252A2C !important;
+                                                }
+                                            }
+                                            .btn-fill-out{
+                                                border-radius: 5px !important;
+                                            }
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            a{
+                                                color: #fff;
+                                                &:hover{
+                                                    color: #FF324D;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .header__icon{
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

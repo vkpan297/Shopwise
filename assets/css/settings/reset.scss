@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    a {
+        text-decoration: none;
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    ul, li {
+        list-style-type: none;
+        margin:0;
+    }
+    button{
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    .lnr{
+        font-size: 18px;
+    }
+    .lnr-magnifier{
+        position: relative;
+    }
+    form{
+        position: relative;
+        width: 100%;
+        input{
+            background-color: transparent;
+            border-bottom: 2px solid #fff;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 0;
+            padding: 10px 0;
+            color: #fff;
+            width: 100%;
+            box-shadow: none;
+            height: 50px;
+            display: block;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            outline: none;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+    }
+    .btn-fill-out {
+        background-color: transparent;
+        border: 1px solid #FF324D;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 40px;
+        &:hover{
+            &::after{
+                width: 0;
+            }
+            &::before{
+                width: 0;
+            }
+        }
+    }
+    .btn-fill-out::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #FF324D;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        width: 51%;
+    }
+    .btn-fill-out::after{
+        content: "";
+        position: absolute;
+        left: auto;
+        right:0;
+        top: 0;
+        bottom: 0;
+        background-color: #FF324D;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        width: 51%;
+    }
+    .btn-fill-out:hover {
+        color: #FF324D ;
+    }
+    .btn-fill-out:hover::after{
+        width: 0;
+    }
+    .btn-fill-out:hover::before{
+        width: 0;
+    }
+    .content{
+        padding: 30px;
+    }
+    
+
+
+
+    .product_icon{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 2;
+        right: 0;
+        text-align: center;
+        padding-top: 0;
+        transition: all .5s ease-in-out;
+        transform: translateY(-50%);
+    }
+    .product_icon ul{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        opacity: 0;
+    }
+    .product_nav:hover ul{
+        opacity: 1;
+    }
+    .product_icon ul li{
+        transition: all 0.2s ease 0s;
+        transform: translate(0, 15px);
+        position: relative;
+        margin: 0px 5px;
+        display: inline-block;
+    }
+    .product_icon ul li a{
+        border-radius: 100%;
+        color: #292B2C;
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 0;
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+    .pro_nav-item a i{
+        vertical-align: middle;
+        line-height: 37px;
+        font-size: 18px;
+    }
+    .product_img{
+        position: relative;
+    }
+    .product_img::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0,0,0,0.2);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+    }
+    .product_nav:hover .product_img::before{
+        opacity: 1;
+    }
+    .product_info{
+        padding: 15px;
+        text-align: center;
+        position: relative;
+    }
+    .product_info h6 a{
+        color: #292b2c;
+    }
+    .product_info h6 a:hover{
+    color: #FF324D;
+    }
+    .product_info h6 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-transform: capitalize;
+        color: #292b2c;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .product_price span{
+        color: #FF324D;
+        font-weight: 600;
+    }
+    .product_price del{
+        font-size: 14px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+    .on_sale span{
+        display: inline-block;
+        color: #388e3c;
+        font-size: 14px;
+    }
+    .on_sale{
+        display:inline-block;
+    }
+    .rating_wrap .rating {
+        overflow: hidden;
+        position: relative;
+        height: 20px;
+        font-size: 12px;
+        width: 70px;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rating::before {
+        font-size: 12px;
+        content: "\f005\f005\f005\f005\f005";
+        top: 0;
+        position: absolute;
+        left: 0;
+        float: left;
+        color: #F6BC3E;
+    }
+    .product_rate {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+        color: #F6BC3E;
+        width: 80%;
+    }
+    
+    .product_rate::before {
+        font-size: 12px;
+        content: "\f005\f005\f005\f005\f005";
+        top: 0;
+        position: absolute;
+        left: 0;
+        font-weight: 900;
+    }
+    .rating_num {
+        font-size: 14px;
+        margin-left: 5px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .pr_desc{
+        display: none;
+    }
+    .product_info .add-to-cart {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        background-color: #fff;
+        padding: 10px 15px 15px 15px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    
+    }
+    .product_nav:hover .product_info .add-to-cart {
+        animation-name: fadeInUp;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+        opacity: 1;
+    }
+    .product_icon a:hover{
+        background-color: #FF324D;
+    }
+    .product_icon a:hover i{
+        color: #fff;
+    }
+    .close{
+        cursor: pointer;
+    }
+}

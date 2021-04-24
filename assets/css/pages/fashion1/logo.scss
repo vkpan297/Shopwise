@@ -1,0 +1,73 @@
+.logo{
+    .container{
+        padding: 100px 0;
+        .logo_nav{
+            display: flex;
+            justify-content: center;
+            .logo_item{
+                padding: 0 40px;
+                border-right: 1px solid #ddd;
+                &:nth-child(3){
+                    border: none;
+                }
+                .icon{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    i{
+                        font-size: 25px;
+                        line-height: 1;         
+                    }
+                }
+                .logo_content{
+                    text-align: center;
+                    h5{
+                        color: #292b2c;
+                        margin-bottom: .5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        font-size: 18px;
+                    }
+                    p{
+                        color: #687188;
+                        line-height: 28px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .logo{
+        .container{
+            .logo_nav{
+                flex-direction: column;
+                .logo_item{
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) 
+and (max-width: 1024px){
+    .logo{
+        .container{
+            .logo_nav{
+                flex-direction: column;
+                .logo_item{
+                    border: 0;
+                    .logo_content{
+                        h5{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.slider_wrap{
+    margin-left: 25%;
+    
+    .container{
+        .slider{
+            z-index: 0 !important;
+            padding-top: 30px;
+            .slider_item{
+                width: 825px;
+                height: 500px;
+                position: relative;
+                .slider_img{
+                    img{
+                        width: 825px;
+                        height: 500px;
+                    }
+                }
+                .container{
+                    position: absolute;
+                    top:40%;
+                    left:5%;
+                    width: 55%;
+                    .slider_content{
+                        p{
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                        }
+                        h3{
+                            margin-bottom: 10px;
+                            font-size: 50px;
+                        }
+                        a{
+                            border-radius: unset;
+                            border: 1px solid #FF324D;
+                            color: #fff;
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+                            line-height: normal;
+                            padding: 12px 35px;
+                            transition: all 0.3s ease-in-out;
+                            line-height: 50px;
+                            &:hover{
+                                color: #FF324D;
+                                box-shadow: none;
+                                outline: medium none;
+                                &::before{
+                                    width: 0;
+                                }
+                                &::after{
+                                    width:0;
+                                }
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                background-color: #FF324D;
+                                z-index: -1;
+                                transition: all 0.3s ease-in-out;
+                                width: 50%;
+                                border-radius: unset;
+                                color: #FF324D;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: auto;
+                                top: 0;
+                                bottom: 0;
+                                background-color: #FF324D;
+                                z-index: -1;
+                                transition: all 0.3s ease-in-out;
+                                width: 50%;
+                                right:0;
+                                border-radius: unset;
+                                color: #FF324D;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-dots{
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    left:0;
+    outline: none;
+
+    .owl-dot{
+        background-color: #333;
+        border-radius: none;
+        border: 0;
+        margin: 8px;
+        position: relative;
+        &.active{
+            &::before{
+                border-color: #FF324D;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            border-radius: none;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border: 2px solid #333;
+            margin: -2px;
+        }
+    }
+}
+.owl-theme{
+    .owl-dots{
+        .owl-dot{
+            &:focus{
+                outline: none;
+            }
+            &.active{
+                span{
+                    background-color: #FF324D;
+                }
+            }
+            span{
+                width: 12px;
+                height: 12px;
+                margin: 2px 2px;
+                display: block;
+                transition: opacity .2s ease;
+                border-radius: unset !important;
+                background: #869791;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.logo_icon{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .container{
+        .logo_text{
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            h4{
+                font-weight: 700;
+            }
+        }
+        .logo_icon-nav{
+            .logo-item{
+                opacity: 0.7;
+                width: 163px;
+                margin: 0 auto;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}
+.logo_icon .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+.logo_icon{
+    .owl-nav{
+        position: absolute;
+        border-radius: 0;
+        right: 20px;
+        top:-80px;
+        height: auto;
+        button.owl-prev{
+            left:auto;
+            right: 20px;
+            position: absolute;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            i{
+                font-size:15px;
+                color: #000;   
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        button.owl-next{
+           
+            left: 0;
+            right:auto;
+            position: absolute;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            i{
+                font-size:15px;
+                color: #000;
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        .owl-next,.owl-prev{
+            &:focus{
+                border:0;
+                outline: none; 
+            }
+        }
+    
+    }
+}

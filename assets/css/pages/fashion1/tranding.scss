@@ -1,0 +1,95 @@
+.tranding{
+    background-color: #F4F9FC ;
+    position: relative;
+    margin-top: 100px;
+    .container{
+        .row{
+            flex-direction: row-reverse;
+            .col-md-6{
+                margin-top: 150px;
+                span{
+                    color: #FF324D;
+                    margin-bottom: 10px;
+                    display: block;
+                    font-weight: 600;
+                }
+                h3{
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                }
+                h5{
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                a{
+                    border-radius: unset;
+                    padding: 12px 35px;
+                    font-weight: 500;
+                }
+            }
+            .col-md-5{
+                float: left;
+                img{
+                    margin-top: -40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .tranding{
+        .container{
+            .row{
+                .col-md-6{
+                    margin-top: 30px;
+                    text-align: center;
+                    span{
+                        font-weight: 500;
+                    }
+                    h3{
+                        font-size: 22px;
+                    }
+                    h5{
+                        font-size: 16px;
+                    }
+                    a{
+                        padding: 8px 24px;
+                        margin: 10px 0;
+                    }
+                }
+                .col-md-5{
+                    img{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) 
+and (max-width: 1024px){
+    .tranding{
+        .container{
+            .row{
+                .col-md-6{
+                    margin-top: 30px;
+                    span{
+                        font-weight: 500;
+                    }
+                    h3{
+                        font-size: 22px;
+                    }
+                    h5{
+                        font-size: 16px;
+                    }
+                    a{
+                        padding: 8px 24px;
+                        margin: 10px 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

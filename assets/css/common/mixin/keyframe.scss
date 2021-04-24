@@ -1,0 +1,58 @@
+@keyframes criss-cross-left {
+    0% {
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+    }
+  }
+  @keyframes criss-cross-right {
+    0% {
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+    }
+  }
+
+
+
+  @keyframes ball-pulse-sync{
+    33% {
+        transform: translateY(10px);
+    }
+    66% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideinLeft{
+  from{
+      opacity: 0;
+      transform: translateX(calc(100% + 32px));
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

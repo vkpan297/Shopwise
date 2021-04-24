@@ -1,0 +1,168 @@
+.sale_img{
+    padding-top:70px;
+    .img-item{
+        position: relative;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .col-md-6{
+        .sale-info1{
+            position: absolute;
+            top:30%;
+            right: 20px;
+            padding:20px;
+            h5{
+                font-weight: 600;
+            }
+            h3{
+                font-weight: 700;
+            }
+            a{
+                color:#333;
+                font-weight: 600;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 7px;
+                    background-color: rgba(255,50,77,0.2);
+                    width: 100%;
+                    bottom: 0;
+                }
+                &:hover{
+                    color: #FF324D;
+                }
+            }
+        }
+        &:hover{
+            .img-item{
+                img{
+                    transform: scale(1.06);
+                }
+            }
+        }
+        .img-item{
+            img{
+                transition: all 0.3s ease-in-out;
+                width: 100%;    
+            }
+        }
+    }
+    .col-md-6{
+        .sale-info2{
+            position: absolute;
+            top:30%;
+            right: 50px;
+            padding:15px;
+            h3{
+                font-weight: 600;
+            }
+            h4{
+                font-weight: 700;
+            }
+            a{
+                color:#333;
+                font-weight: 600;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 7px;
+                    background-color: rgba(255,50,77,0.2);
+                    width: 100%;
+                    bottom: 0;
+                }
+                &:hover{
+                    color: #FF324D;
+                }
+            }
+        }
+        &:hover{
+            .img-item{
+                img{
+                    transform: scale(1.06);
+                }
+            }
+        }
+        .img-item{
+            img{
+                transition: all 0.3s ease-in-out;
+                width: 100%; 
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .sale_img{
+        .container{
+            .row{
+                .col-md-6{
+                    
+                    .sale-info1{
+                        top:20%;
+                        h5{
+                            font-size: 18px;
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                    .sale-info2{
+                        top:20%;
+                        h4{
+                            font-size: 18px;
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) 
+and (max-width: 1024px){
+    .sale_img{
+        .container{
+            .row{
+                .col-md-6{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .sale-info1{
+                        top:15%;
+                        h5{
+                            font-size: 18px;
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                    .sale-info2{
+                        top:15%;
+                        h4{
+                            font-size: 18px;
+                        }
+                        h3{
+                            font-size: 20px;
+                        }
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

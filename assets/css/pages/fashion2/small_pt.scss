@@ -1,0 +1,45 @@
+.small_pt{
+    padding-bottom: 120px;
+    .container{
+        .row{
+            margin-right: -50px;
+            margin-left: -50px;
+            .col-md-4{
+               .sale_banner{
+                a{
+                    overflow: hidden;
+                    position: relative;
+                    display: block;
+                    &:hover{
+                        &:before,&:after{
+                            opacity: 0;
+                            transform: translate(0px, 0px);
+                        }
+                    }
+                    &::before{
+                        border-top: 1px solid rgba(255, 255, 255, 0.4);
+                        transform: translate(105%, 0%);
+                    }
+                    &::after{
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                        transform: translate(-105%, 0%);
+                    }
+                    &::before,&:after{
+                        background-color: rgba(255, 255, 255, 0.6);
+                        content: "";
+                        height: 100%;
+                        left: 0;
+                        opacity: 1;
+                        position: absolute;
+                        top: 0;
+                        transition: all 0.9s ease 0s;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    
+                }
+               }
+            }
+        }
+    }
+}
